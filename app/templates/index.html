@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Lista de personajes de la API "Rick and Morty" </h1>
+
+<table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th> 
+      <th>Status</th>
+      <th>Species</th>
+      <th>First_location</th> 
+      <th>Last_location</th>
+      <th>Image</th>
+      <th>Full profile</th>
+    </tr>
+{% for i in listar %}
+    <tr>
+      <td>{{i.id}}</td>
+      <td>{{i.name}}</td> 
+      <td>{{i.status}}</td>
+      <td>{{i.species}}</td>
+      <td>{{i.first_location}}</td> 
+      <td>{{i.last_location}}</td>
+      <td><img src="{{i.image}}" alt=""></td>
+      <td><a href="{{url_for('api_ruta.perfil',id=i._id)}}">ver más</a><br></td>
+    </tr>
+{% endfor %}
+{% endblock %}

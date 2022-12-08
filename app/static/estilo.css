@@ -1,0 +1,42 @@
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #006699;
+    text-align: center;
+    padding: 0.2em 0 0.2em 0;
+    margin: 0 0 0.3em 0;
+    border-top: 3px solid #006699;
+    border-bottom: 3px solid #006699;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #A1F577;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+
+
+.img {
+    float: left;
+}
+
+ul {
+    float: right;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+}
+
+

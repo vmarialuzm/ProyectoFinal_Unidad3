@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Perfil de {{ info.name }}</h1>
+<img class="img" src="{{info.image}}" alt="">
+
+<ul>
+    <li>Id: {{ info.id }}</li>
+    <li>Status: {{ info.status }}</li>
+    <li>Specie: {{ info.species }}</li>
+    <li>Gender: {{ info.gender }}</li>
+    <li>First_location: {{ info.first_location }}</li>
+    <li>Last_location: {{ info.last_location }}</li>
+    <li>N° Episodes: {{ info.n_episodes|length }}</li>
+    <li>Created: {{ info.created }}</li>
+    <a href="{{url_for('api_ruta.listar_documentos')}}">Regresar al inicio</a>
+</ul>
+
+
+
+{% endblock %}
